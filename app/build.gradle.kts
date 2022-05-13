@@ -41,5 +41,5 @@ android {
 
 dependencies {
     implementation(ApplicationDependencies.dependenciesApp)
-    implementation(project(mapOf("path" to ":svgpathcompose")))
+    implementation(project(mapOf("path" to ":svgPathCompose")))
 }

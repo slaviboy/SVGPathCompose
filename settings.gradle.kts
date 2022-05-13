@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "SVGPathCompose"
-include(":svgpathcompose", ":app")
+include(":svgPathCompose", ":app")
