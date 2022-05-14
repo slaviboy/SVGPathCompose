@@ -11,9 +11,9 @@ object ApplicationConfiguration {
     const val proguardConsumerRules =  "consumer-rules.pro"
     const val dimension = "environment"
 
-    const val artifactId = "kotlin-lib-svgpathcompose"
-    const val groupId = "com.slaviboy.lib"
-    const val version = "2.15.4"
+    const val artifactId = "SVGPathCompose"
+    const val groupId = "com.slaviboy"
+    const val version = "0.0.1"
     const val name = "Kotlin Library SVG Path Compose"
     const val url = "https://github.com/slaviboy"
     const val description = "Slaviboy: Kotlin SVG Path Compose Library"
