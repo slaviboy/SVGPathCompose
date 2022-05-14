@@ -4,7 +4,6 @@ plugins {
 }
 
 android {
-
     compileSdk = ApplicationConfiguration.compileSdk
     defaultConfig {
         applicationId = "com.slaviboy.svgpathcomposeexample"
@@ -14,7 +13,6 @@ android {
         versionCode = ApplicationConfiguration.versionCode
         versionName = ApplicationConfiguration.versionName
     }
-
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false

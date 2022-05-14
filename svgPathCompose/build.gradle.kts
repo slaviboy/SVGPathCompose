@@ -5,14 +5,12 @@ plugins {
 }
 
 android {
-
     compileSdk = ApplicationConfiguration.compileSdk
     defaultConfig {
         minSdk = ApplicationConfiguration.minSdk
         targetSdk = ApplicationConfiguration.targetSdk
         testInstrumentationRunner = ApplicationConfiguration.androidTestInstrumentation
     }
-
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
@@ -43,8 +41,6 @@ publishing {
             groupId = ApplicationConfiguration.groupId
             artifactId = ApplicationConfiguration.artifactId
             version = ApplicationConfiguration.version
-
-            //from(components["java"])
         }
     }
 }
