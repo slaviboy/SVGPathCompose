@@ -4,8 +4,7 @@ object ApplicationConfiguration {
     const val minSdk = 21
     const val targetSdk = 32
     const val versionCode = 1
-    const val versionName = "1.0.0"
-    const val buildToolsVersion = "29.0.3"
+    const val versionName = "0.0.3"
 
     const val androidTestInstrumentation = "androidx.test.runner.AndroidJUnitRunner"
     const val proguardConsumerRules =  "consumer-rules.pro"
@@ -13,7 +12,7 @@ object ApplicationConfiguration {
 
     const val artifactId = "SVGPathCompose"
     const val groupId = "com.slaviboy"
-    const val version = "0.0.1"
+    const val version = "0.0.3"
     const val name = "Kotlin Library SVG Path Compose"
     const val url = "https://github.com/slaviboy"
     const val description = "Slaviboy: Kotlin SVG Path Compose Library"
