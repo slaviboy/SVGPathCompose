@@ -37,6 +37,18 @@ android {
     }
 }
 
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = ApplicationConfiguration.groupId
+            artifactId = ApplicationConfiguration.artifactId
+            version = ApplicationConfiguration.version
+
+            //from(components["java"])
+        }
+    }
+}
+
 dependencies {
     implementation(ApplicationDependencies.dependenciesLibrary)
 }
