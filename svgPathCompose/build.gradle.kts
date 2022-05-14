@@ -35,12 +35,18 @@ android {
     }
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            groupId = ApplicationConfiguration.groupId
-            artifactId = ApplicationConfiguration.artifactId
-            version = ApplicationConfiguration.version
+afterEvaluate {
+    publishing {
+        publications {
+
+            // Creates a Maven publication called "release".
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = ApplicationConfiguration.groupId
+                artifactId = ApplicationConfiguration.artifactId
+                version =ApplicationConfiguration.version
+            }
+
         }
     }
 }
