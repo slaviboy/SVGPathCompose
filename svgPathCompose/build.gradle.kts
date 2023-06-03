@@ -5,6 +5,7 @@ plugins {
 }
 
 android {
+    namespace = ApplicationConfiguration.libraryNamespace
     compileSdk = ApplicationConfiguration.compileSdk
     defaultConfig {
         minSdk = ApplicationConfiguration.minSdk
@@ -21,17 +22,17 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_18
+        targetCompatibility = JavaVersion.VERSION_18
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "18"
     }
     buildFeatures {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = ApplicationDependencyVersions.compose
+        kotlinCompilerExtensionVersion = ApplicationDependencyVersions.composeCompiler
     }
 }
 

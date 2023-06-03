@@ -4,9 +4,10 @@ plugins {
 }
 
 android {
+    namespace = ApplicationConfiguration.appNamsespace
     compileSdk = ApplicationConfiguration.compileSdk
     defaultConfig {
-        applicationId = "com.slaviboy.svgpathcomposeexample"
+        applicationId = ApplicationConfiguration.appNamsespace
         minSdk = ApplicationConfiguration.minSdk
         targetSdk = ApplicationConfiguration.targetSdk
         testInstrumentationRunner = ApplicationConfiguration.androidTestInstrumentation
@@ -23,17 +24,17 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_18
+        targetCompatibility = JavaVersion.VERSION_18
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "18"
     }
     buildFeatures {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = ApplicationDependencyVersions.compose
+        kotlinCompilerExtensionVersion = ApplicationDependencyVersions.composeCompiler
     }
 }
 
